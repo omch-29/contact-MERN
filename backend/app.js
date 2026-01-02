@@ -8,9 +8,9 @@ const contactRoutes = require("./routes/contactRoutes");
 const app = express();
 
 app.use(cors({
-  origin: [
-    "http://localhost:5173",          
-    "https://your-frontend.vercel.app"
+  origin: [      
+    "https://contact-mern.onrender.com",
+    "http://localhost:5173",    
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
