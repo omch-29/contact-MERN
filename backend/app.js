@@ -8,15 +8,13 @@ const contactRoutes = require("./routes/contactRoutes");
 const app = express();
 
 app.use(cors({
-  origin: [      
-    "https://contact-mern.onrender.com",
-    "http://localhost:5173",    
+  origin: [
+    "https://contact-mern-1.onrender.com",
+     "http://localhost:5173",
   ],
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
 }));
-
-app.use(cors());
 app.use(express.json());
 app.use("/api/contacts", contactRoutes);
 
