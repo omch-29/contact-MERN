@@ -1,7 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
 
-const API = "http://localhost:5000/api/contacts";
+// const API = "http://localhost:5000/api/contacts";
+const API = "https://contact-mern-hk6s8eitg-oms-projects-e873cbec.vercel.app/api/contacts";
 
 function ContactForm({ onAdd }) {
   const [form, setForm] = useState({
