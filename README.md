@@ -1,6 +1,6 @@
 # Contact Management Application (MERN Stack)
 
-# live url: 
+# live url: https://contact-mern-1.onrender.com
 
 A full-stack contact management application built using the MERN stack. Users can submit contact details through a form and view all submitted contacts dynamically without page reload.
 
