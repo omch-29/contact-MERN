@@ -5,7 +5,7 @@ import ContactList from "../components/ContactList";
 
 
 // const API = "http://localhost:5000/api/contacts";
-const API = "https://contact-mern-hk6s8eitg-oms-projects-e873cbec.vercel.app/api/contacts";
+const API = "https://contact-mern.onrender.com/api/contacts"
 
 function App() {
   const [contacts, setContacts] = useState([]);
