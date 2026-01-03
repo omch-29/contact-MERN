@@ -1,4 +1,6 @@
 import axios from "axios";
+import { useEffect, useState } from "react";
+
 
 // const API = "http://localhost:5000/api/contacts";
 const API = "https://contact-mern.onrender.com/api/contacts";
@@ -8,6 +10,16 @@ function ContactList({ contacts, onDelete }) {
     await axios.delete(`${API}/${id}`);
     onDelete();
   };
+
+  if (loading) {
+    return (
+      <h1 style={{ textAlign: "center" }}>
+        Loading… Thanks for your patience   
+        <br />
+        Backend is waking up 
+      </h1>
+    );
+  }
 
   return (
     <table>
