@@ -29,6 +29,18 @@ function App() {
     fetchContacts();
   }, []);
 
+
+  if (loading) {
+    return (
+      <h1 style={{ textAlign: "center" }}>
+        Loading… Thanks for your patience  
+        <br />
+        Backend is waking up 
+      </h1>
+    );
+  }
+
+
   return (
     <div className="container">
       <h1>Contact Manager</h1>
